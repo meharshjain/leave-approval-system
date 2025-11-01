@@ -67,7 +67,7 @@ const DepartmentManagement: React.FC = () => {
     try {
       const [departmentsRes, coordinatorsRes] = await Promise.all([
         axios.get('/api/departments'),
-        axios.get('/api/users/managers'),
+        axios.get('/api/users/all/managers'),
       ]);
 
       setDepartments(departmentsRes.data);

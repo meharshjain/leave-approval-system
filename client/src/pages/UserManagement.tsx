@@ -81,7 +81,7 @@ const UserManagement: React.FC = () => {
       const [usersRes, departmentsRes, managersRes] = await Promise.all([
         axios.get('/api/users'),
         axios.get('/api/departments'),
-        axios.get('/api/users/managers'),
+        axios.get('/api/users/all/managers'),
       ]);
 
       setUsers(usersRes.data.users);

@@ -163,7 +163,7 @@ router.get('/department/:departmentId', auth, async (req, res) => {
 // @route   GET /api/users/managers
 // @desc    Get all managers
 // @access  Private
-router.get('/managers', auth, async (req, res) => {
+router.get('/all/managers', auth, async (req, res) => {
   try {
     const managers = await User.find({ 
       role: { $in: ['manager', 'coordinator', 'admin'] },

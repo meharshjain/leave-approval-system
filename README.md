@@ -126,7 +126,7 @@ A comprehensive MERN stack application for managing employee leave requests with
 - `GET /api/users/:id` - Get user by ID
 - `PUT /api/users/:id` - Update user
 - `DELETE /api/users/:id` - Deactivate user
-- `GET /api/users/managers` - Get all managers
+- `GET /api/users/all/managers` - Get all managers
 
 ### Department Management
 - `GET /api/departments` - Get all departments
